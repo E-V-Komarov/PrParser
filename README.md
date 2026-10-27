@@ -1,3 +1,23 @@
+![Моя картинка][my-image]
+
+[my-image]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==
+
+![Белый квадратик](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)
+
+<img width="10" height="10" alt="Квадратик" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+
+![Синий квадрат][my-blue-img]
+
+[my-blue-img]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAA6ElEQVR4nO3SsRHAMAwDMcVre/h4BX0P1Kz++M39h52z3CFW41mBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViBWIFYgViz9wAI3QJCX/skaAAAAABJRU5ErkJggg==
+
+![Синий квадрат](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFUlEQVR4nGNkqP7PgBsw4ZFjGLnSANMqAY57gT7kAAAAAElFTkSuQmCC)
+
+Формула в строке: $a^2 + b^2 = c^2$
+
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
 Формула Эйлера: $e^{i\pi} + 1 = 0$
 $$
 \sum_{n=1}^{10} n^2
