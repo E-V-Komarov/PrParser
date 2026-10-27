@@ -1,4 +1,29 @@
 ```mermaid
+flowchart TB
+  start(["Start"])
+  input[/"User request"/]
+  check{"Valid?"}
+  work["Process request"]
+  err["Show error"]
+  db[("Database")]
+  done(["Done"])
+  img1@{ img: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJTVkd5RHJuSmJoRTExIiB4MT0iMCUiIHgyPSIxMDAlIiB5MT0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjAwODRkIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY0ZjhiIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNTVkd5RHJuSmJoRTExKSIgZD0iTTAgMGgyNTZ2MjU2SDB6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwOS4wMDggMTc4LjAyNGg5LjM5MnYtNi40NTVoLTkuMzkyem0xNS43OTIgMGg5LjZ2LTYuNDU1aC05LjZ6TTg2LjQgNDYuODE0TDQ0LjggNjcuNDYzdjEyOC4zNTZsNDEuNiAxNC4wNjh6bTYuNCA0MC44NDV2ODMuOTFoOS42djYuNDU1aC05LjZ2MzYuMzQ5YTMuMjQgMy4yNCAwIDAgMS0xLjMzMSAyLjYyYTMuMTggMy4xOCAwIDAgMS0yLjg4Ny40NGwtNDgtMTYuMjNhMy4yMyAzLjIzIDAgMCAxLTIuMTgyLTMuMDZWNjUuNDUyYzAtMS4yMjYuNjk0LTIuMzUzIDEuNzg5LTIuODk1bDQ4LTIzLjgyNGEzLjE2IDMuMTYgMCAwIDEgMy4xLjE1NWEzLjIzIDMuMjMgMCAwIDEgMS41MTEgMi43NHYzOS41NzZoOS42djYuNDU1em00OCA5MC4zNjVoOS42di02LjQ1NWgtOS42em0uMjA4LTkwLjM2NWg5LjM5MnYtNi40NTVoLTkuMzkyem0tMTYgMGg5LjM5MnYtNi40NTVoLTkuMzkyem0tMTYgMGg5LjM5MnYtNi40NTVoLTkuMzkyek0yMTEuMiA2Ny40NjNsLTQxLjYtMjAuNjQ5djE2My4wNzNsNDEuNi0xNC4wNjh6bTYuNCAxMzAuNjhhMy4yMyAzLjIzIDAgMCAxLTIuMTgyIDMuMDZsLTQ4IDE2LjIzYTMuMTcgMy4xNyAwIDAgMS0yLjg4Ny0uNDRhMy4yNCAzLjI0IDAgMCAxLTEuMzMxLTIuNjJ2LTM2LjM1aC02LjE5MnYtNi40NTRoNi4xOTJ2LTgzLjkxaC02LjE5MnYtNi40NTVoNi4xOTJWNDEuNjI4YzAtMS4xMTcuNTczLTIuMTUzIDEuNTEtMi43NGEzLjE2IDMuMTYgMCAwIDEgMy4xMDEtLjE1NWw0OCAyMy44MjRhMy4yMyAzLjIzIDAgMCAxIDEuNzg5IDIuODk1em0tODAuMjExLTg5Ljk2MmwtNS45NzgtMi4zMTdsLTE2IDQxLjk1NWw1Ljk3OCAyLjMxN3ptMjEuNjczIDIwLjQ4N2EzLjI0MyAzLjI0MyAwIDAgMCAwLTQuNTYzbC0xMi44LTEyLjkxbC00LjUyNCA0LjU2NGwxMC41MzcgMTAuNjI4bC0xMC41MzcgMTAuNjI3bDQuNTI0IDQuNTY0em0tNDkuMzI0IDEyLjkxbC0xMi44LTEyLjkxYTMuMjQzIDMuMjQzIDAgMCAxIDAtNC41NjNsMTIuOC0xMi45MWw0LjUyNCA0LjU2NGwtMTAuNTM3IDEwLjYyOGwxMC41MzcgMTAuNjI3eiIvPjwvc3ZnPg==", label: "Aws api gateway", w: 48, h: 48, constraint: "on" }
+
+  start --> input
+  input --> check
+  check -->|"yes"| work
+  check -->|"no"| err
+  work --> db
+  db --> done
+  err --> done
+
+  style check fill:#f8cecc,stroke:#b85450,color:#111111
+  style img1 fill:none,stroke:none
+
+%% graph:positions {"start":{"x":37,"y":12},"input":{"x":37,"y":136},"check":{"x":-72,"y":264},"work":{"x":212,"y":416},"err":{"x":12,"y":540},"db":{"x":212,"y":540},"done":{"x":39,"y":664},"img1":{"x":268,"y":168}}
+```
+
+```mermaid
 ---
 title: Мой заголовок
 config:
